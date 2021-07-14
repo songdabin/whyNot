@@ -10,7 +10,7 @@
 ## 프로젝트 소개
 
 
-## Figma를 이용한 앱 구현 예상 실행 화면 구성
+## Figma를 이용한 앱 실행 예상 화면 구성
 * 기본적인 화면들 (로그인, 홈 화면, 설정)
 <img width="711" alt="Screen Shot 2021-07-14 at 3 38 47 PM" src="https://user-images.githubusercontent.com/74345861/125575049-3cdafafb-3b6f-4274-985c-e329948463a4.png">
 
