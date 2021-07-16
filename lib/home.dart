@@ -6,21 +6,28 @@ import 'package:intl/intl.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'login_page.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(new MyApp());
+class HomePage extends StatefulWidget {
+  @override
+  _HomePage createState() => _HomePage();
 }
 
-class MyApp extends StatelessWidget {
+
+class _HomePage extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: '아니 이거 왜 안돼',
-      theme: new ThemeData(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home"),
         backgroundColor: Color(0xFF3A70AF),
       ),
-      home: new LoginPage(),
+      body: ListView(
+        children: [
+          Column(
+
+          )
+        ],
+      ),
     );
   }
+
 }
