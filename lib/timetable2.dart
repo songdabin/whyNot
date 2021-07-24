@@ -25,111 +25,122 @@ class Timetable2State extends State<Timetable2> {
         ),
         body: Builder(builder: (BuildContext context) {
           return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                _friend1(),
-                Container(height: 10.0),
-                Container(
-                  width: 250,
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey, width: 1),
-                      borderRadius: BorderRadius.circular(15)),
-                  child: DropdownButton(
-                    dropdownColor: Colors.white,
-                    icon: Icon(Icons.arrow_drop_down),
-                    iconSize: 36,
-                    underline: SizedBox(),
-                    style: TextStyle(color: Colors.black, fontSize: 16),
-                    value: dropdownvalue1,
-                    items: items.map((String items) {
-                      return DropdownMenuItem(value: items, child: Text(items));
-                    }).toList(),
-                    onChanged: (String newValue) {
-                      setState(() {
-                        dropdownvalue1 = newValue;
-                      });
-                    },
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  _friend1(),
+                  Container(height: 10.0),
+                  Container(
+                    width: 250,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey, width: 1),
+                        borderRadius: BorderRadius.circular(15)),
+                    child: DropdownButton(
+                      dropdownColor: Colors.white,
+                      icon: Icon(Icons.arrow_drop_down),
+                      iconSize: 36,
+                      isExpanded: true,
+                      underline: SizedBox(),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
+                      value: dropdownvalue1,
+                      items: items.map((String items) {
+                        return DropdownMenuItem(
+                            value: items, child: Text(items));
+                      }).toList(),
+                      onChanged: (String newValue) {
+                        setState(() {
+                          dropdownvalue1 = newValue;
+                        });
+                      },
+                    ),
                   ),
-                ),
-                Container(height: 25.0),
-                _friend2(),
-                Container(height: 10.0),
-                Container(
-                  width: 250,
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey, width: 1),
-                      borderRadius: BorderRadius.circular(15)),
-                  child: DropdownButton(
-                    dropdownColor: Colors.white,
-                    icon: Icon(Icons.arrow_drop_down),
-                    iconSize: 36,
-                    underline: SizedBox(),
-                    style: TextStyle(color: Colors.black, fontSize: 16),
-                    value: dropdownvalue2,
-                    items: items.map((String items) {
-                      return DropdownMenuItem(value: items, child: Text(items));
-                    }).toList(),
-                    onChanged: (String newValue) {
-                      setState(() {
-                        dropdownvalue2 = newValue;
-                      });
-                    },
+                  Container(height: 25.0),
+                  _friend2(),
+                  Container(height: 10.0),
+                  Container(
+                    width: 250,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey, width: 1),
+                        borderRadius: BorderRadius.circular(15)),
+                    child: DropdownButton(
+                      dropdownColor: Colors.white,
+                      icon: Icon(Icons.arrow_drop_down),
+                      iconSize: 36,
+                      isExpanded: true,
+                      underline: SizedBox(),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
+                      value: dropdownvalue2,
+                      items: items.map((String items) {
+                        return DropdownMenuItem(
+                            value: items, child: Text(items));
+                      }).toList(),
+                      onChanged: (String newValue) {
+                        setState(() {
+                          dropdownvalue2 = newValue;
+                        });
+                      },
+                    ),
                   ),
-                ),
-                Container(height: 25.0),
-                _friend3(),
-                Container(height: 10.0),
-                Container(
-                  width: 250,
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey, width: 1),
-                      borderRadius: BorderRadius.circular(15)),
-                  child: DropdownButton(
-                    dropdownColor: Colors.white,
-                    icon: Icon(Icons.arrow_drop_down),
-                    iconSize: 36,
-                    underline: SizedBox(),
-                    style: TextStyle(color: Colors.black, fontSize: 16),
-                    value: dropdownvalue3,
-                    items: items.map((String items) {
-                      return DropdownMenuItem(value: items, child: Text(items));
-                    }).toList(),
-                    onChanged: (String newValue) {
-                      setState(() {
-                        dropdownvalue3 = newValue;
-                      });
-                    },
+                  Container(height: 25.0),
+                  _friend3(),
+                  Container(height: 10.0),
+                  Container(
+                    width: 250,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey, width: 1),
+                        borderRadius: BorderRadius.circular(15)),
+                    child: DropdownButton(
+                      dropdownColor: Colors.white,
+                      icon: Icon(Icons.arrow_drop_down),
+                      iconSize: 36,
+                      isExpanded: true,
+                      underline: SizedBox(),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
+                      value: dropdownvalue3,
+                      items: items.map((String items) {
+                        return DropdownMenuItem(
+                            value: items, child: Text(items));
+                      }).toList(),
+                      onChanged: (String newValue) {
+                        setState(() {
+                          dropdownvalue3 = newValue;
+                        });
+                      },
+                    ),
                   ),
-                ),
-                Container(height: 25.0),
-                _friend4(),
-                Container(height: 10.0),
-                Container(
-                  width: 250,
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey, width: 1),
-                      borderRadius: BorderRadius.circular(15)),
-                  child: DropdownButton(
-                    dropdownColor: Colors.white,
-                    icon: Icon(Icons.arrow_drop_down),
-                    iconSize: 36,
-                    underline: SizedBox(),
-                    style: TextStyle(color: Colors.black, fontSize: 16),
-                    value: dropdownvalue4,
-                    items: items.map((String items) {
-                      return DropdownMenuItem(value: items, child: Text(items));
-                    }).toList(),
-                    onChanged: (String newValue) {
-                      setState(() {
-                        dropdownvalue4 = newValue;
-                      });
-                    },
+                  Container(height: 25.0),
+                  _friend4(),
+                  Container(height: 10.0),
+                  Container(
+                    width: 250,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey, width: 1),
+                        borderRadius: BorderRadius.circular(15)),
+                    child: DropdownButton(
+                      dropdownColor: Colors.white,
+                      icon: Icon(Icons.arrow_drop_down),
+                      iconSize: 36,
+                      isExpanded: true,
+                      underline: SizedBox(),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
+                      value: dropdownvalue4,
+                      items: items.map((String items) {
+                        return DropdownMenuItem(
+                            value: items, child: Text(items));
+                      }).toList(),
+                      onChanged: (String newValue) {
+                        setState(() {
+                          dropdownvalue4 = newValue;
+                        });
+                      },
+                    ),
                   ),
-                ),
-                Container(height: 40.0),
-                _checkButton(),
-              ],
+                  Container(height: 40.0),
+                  _checkButton(),
+                ],
+              ),
             ),
           );
         }),
