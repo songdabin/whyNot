@@ -138,7 +138,7 @@ class LoginPageState extends State<LoginPage> {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(width: 65.0),
+        Container(width: 82.0),
         SizedBox(
           width: 120,
           height: 40,
