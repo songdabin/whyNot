@@ -26,17 +26,19 @@ class _HomePage extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Home"),
+          title: Text("홈"),
           centerTitle: true,
         ),
         body: Container(
             width: MediaQuery.of(context).size.width,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: <Widget>[
+                _text1(),
+                Container(height: 10.0),
                 Container(
-                    width: 550.0,
-                    height: 600.0,
+                    width: 500.0,
+                    height: 500.0,
                     child: Column(
                         children: this
                             .tableData
@@ -61,5 +63,21 @@ class _HomePage extends State<HomePage> {
                             .toList())),
               ],
             )));
+  }
+
+  Widget _text1() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(width: 20.0),
+        Text(
+          '시간표',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 15,
+          ),
+        ),
+      ],
+    );
   }
 }
