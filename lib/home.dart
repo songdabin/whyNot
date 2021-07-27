@@ -28,6 +28,7 @@ class _HomePage extends State<HomePage> {
         appBar: AppBar(
           title: Text("홈"),
           centerTitle: true,
+          backgroundColor: Color(0xFF3A70AF),
         ),
         body: Container(
             width: MediaQuery.of(context).size.width,
